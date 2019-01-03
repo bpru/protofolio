@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="queries.css" />
   </head>
   <body>
-    <section class="landing">
+    <section class="landing" id="section-landing">
       <div class="main-header-bg"></div>
       <header class="main-header">
         <a class="main-header__mobile-nav">
@@ -17,14 +17,20 @@
         </a>
         <nav class="main-header__nav">
           <ul class="main-header__nav-list">
-            <li class="main-header__nav-item"><a href="#">Home</a></li>
-            <li class="main-header__nav-item"><a href="#">Protofolio</a></li>
-            <li class="main-header__nav-item"><a href="#">About Me</a></li>
-            <li class="main-header__nav-item"><a href="#">Contact Me</a></li>
+            <li class="main-header__nav-item">
+              <a href="#section-landing" id="nav-home" class="active">Home</a>
+            </li>
+            <li class="main-header__nav-item">
+              <a href="#section-projects" id="nav-projects">Projects</a>
+            </li>
+            <li class="main-header__nav-item">
+              <a href="#section-about-me" id="nav-about-me">About Me</a>
+            </li>
+            <li class="main-header__nav-item">
+              <a href="#section-contact-me" id="nav-contact-me">Contact Me</a>
+            </li>
           </ul>
-          
         </nav>
-        
       </header>
       <div class="landing-text-box">
         <h1 class="heading-primary">
@@ -33,7 +39,7 @@
         </h1>
       </div>
     </section>
-    <section class="projects" id="projects">
+    <section class="projects" id="section-projects">
       <h1 class="section-heading">Selected Projects</h1>
       <div class="container-projects">
         <div class="card-project" id="card-project-1">
@@ -53,35 +59,17 @@
             <div class="modal-project__heading"><h1>Sciconnector</h1></div>
           </div>
         </div>
-        <!-- <div class="card-project" id="card-project-2">
-          <img src="img/website.jpg" alt="" />
-          <p>some heading...2</p>
-        </div>
-        <div class="modal-project hide" id="modal-project-2">
-          <div class="modal-project__content"><h2>project desc 2</h2></div>
-        </div> -->
-        <!-- <div class="card">
-          <img src="img/website.jpg" alt="" />
-          <p>some heading...</p>
-        </div>
-        <div class="card">
-          <img src="img/website.jpg" alt="" />
-          <p>some heading...</p>
-        </div>
-        <div class="card">
-          <img src="img/website.jpg" alt="" />
-          <p>some heading...</p>
-        </div>
-        <div class="card">
-          <img src="img/website.jpg" alt="" />
-          <p>some heading...</p>
-        </div> -->
       </div>
     </section>
-    <section class="about"></section>
-    <section class="contact"></section>
-    <script src="main.js"></script>
+    <section class="about" id="section-about-me">
+      <h1 class="section-heading">About Me</h1>
+    </section>
+    <section class="contact" id="section-contact-me">
+      <h1 class="section-heading">Contact Me</h1>
+    </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="noframework.waypoints.min.js"></script>
     <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

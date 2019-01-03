@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: sans-serif;
   text-align: center;
@@ -14,6 +17,7 @@ body {
 section {
   padding: 2rem;
   height: 100vh;
+  border: red 1px solid;
 }
 
 /**************************
@@ -29,6 +33,7 @@ section {
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   z-index: 100;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .main-header__nav {
@@ -49,12 +54,14 @@ section {
   /* padding: 0.5rem; */
   /* border-bottom: 1px solid #048dfd; */
 }
-
 .main-header__nav-item a {
-  text-decoration: none;
   color: #fff;
+  text-decoration: none;
 }
 
+.main-header__nav-item .active {
+  color: #048dfd;
+}
 .main-header__nav-item a:hover,
 .main-header__nav-item a:active {
   color: #048dfd;

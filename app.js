@@ -13,4 +13,6 @@ app.get("/omnifood", (req, res) => {
   res.redirect("/omnifood/index.html");
 });
 
-app.listen(5000);
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT);

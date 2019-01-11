@@ -15,8 +15,12 @@ body {
 }
 
 section {
-  padding: 2rem;
-  height: 100vh;
+  padding: 5vw;
+  min-height: 100vh;
+}
+
+.section-heading {
+  font-size: 3vw;
 }
 
 /**************************
@@ -32,7 +36,6 @@ section {
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   z-index: 100;
-  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .main-header__nav {
@@ -100,11 +103,11 @@ section {
 }
 
 .heading-primary-main {
-  font-size: 3rem;
+  font-size: 5vw;
 }
 
 .heading-primary-sub {
-  font-size: 1rem;
+  font-size: 3vw;
   color: #fff;
 }
 
@@ -115,6 +118,15 @@ section {
 /**************************
   section-projects
 ***************************/
+.projects {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url(img/bg-projects.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
 .container-projects {
   display: flex;
   flex-wrap: wrap;
@@ -122,11 +134,11 @@ section {
 }
 
 .card-project {
-  width: 30%;
-  height: 30%;
+  width: 40vw;
+  height: 20vw;
   border-radius: 5px;
   cursor: pointer;
-  margin: 0 1rem;
+  margin: 1rem;
   position: relative;
   background-color: rgba(0, 0, 0);
   box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.7);
@@ -134,7 +146,7 @@ section {
 }
 
 .card-project__title {
-  font-size: 1.8vw;
+  font-size: 2vw;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -155,6 +167,7 @@ section {
 
 .card-project img {
   width: 100%;
+  height: 100%;
   border-radius: 5px;
   margin: 0;
   padding: 0;
@@ -186,8 +199,8 @@ section {
 }
 
 .card-project__skill {
-  font-size: 1vw;
-  width: 25%;
+  font-size: 1.5vw;
+  width: 30%;
   background-color: rgb(10, 142, 250);
   color: #fff;
   border-radius: 50px;
@@ -334,6 +347,10 @@ section {
 .skill-bootstrap {
   background-image: url(img/skill_imgs/bootstrap.png);
 }
+
+.skill-materialize {
+  background-image: url(img/skill_imgs/materialize.png);
+}
 .skill-ruby {
   background-image: url(img/skill_imgs/Ruby-Logo.png);
 }
@@ -345,6 +362,38 @@ section {
 }
 .skill-heroku {
   background-image: url(img/skill_imgs/heroku.png);
+}
+
+.skill-python {
+  background-image: url(img/skill_imgs/python.png);
+}
+
+.skill-java {
+  background-image: url(img/skill_imgs/java.png);
+}
+
+.skill-r {
+  background-image: url(img/skill_imgs/r.png);
+}
+
+.skill-angular {
+  background-image: url(img/skill_imgs/angular.svg);
+}
+
+.skill-flask {
+  background-image: url(img/skill_imgs/flask.png);
+}
+
+.skill-spring {
+  background-image: url(img/skill_imgs/spring.png);
+}
+
+.skill-scikit-learn {
+  background-image: url(img/skill_imgs/scikit-learn.png);
+}
+
+.skill-mysql {
+  background-image: url(img/skill_imgs/mysql.png);
 }
 
 .modal-project__footer {
@@ -368,4 +417,134 @@ section {
 .modal-project__footer .btn-close:active {
   background-color: rgba(4, 141, 253, 0.7);
   color: #fff;
+}
+
+/*======================
+section-about
+======================*/
+.about {
+  background-image: linear-gradient(
+      rgba(255, 255, 255),
+      rgba(187, 233, 247, 0.5)
+    ),
+    url(img/bg-about.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+.about__container {
+  display: flex;
+  align-items: center;
+}
+
+.about__photo {
+  margin: 3vw 5vw;
+}
+
+.about__photo img {
+  object-fit: cover;
+  width: 25vw;
+  height: 25vw;
+  border-radius: 50%;
+  border: 2px solid #048dfd;
+}
+
+.about__desc {
+  text-align: left;
+  margin: 3rem 3rem;
+}
+
+.about__desc p {
+  margin-bottom: 2vw;
+}
+
+.about__desc em {
+  font-size: 110%;
+  text-transform: uppercase;
+  color: #048dfd;
+}
+
+.about__skills {
+  margin-top: 4vw;
+}
+
+.about__skill {
+  width: 4vw;
+  height: 4vw;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.about__skills p {
+  text-decoration: underline;
+}
+
+/*=======================
+section-contact
+=======================*/
+.contact {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.85),
+      rgba(255, 255, 255, 0.85)
+    ),
+    url(img/bg-contact.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* border: 1px solid red; */
+  padding: 2vw;
+}
+
+.contact-methods {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  /* border: 1px solid red; */
+}
+
+.contact-methods__inner-wrapper {
+  /* border: 1px solid blue; */
+}
+
+.contact ion-icon {
+  font-size: 5vw;
+  color: #048dfd;
+  margin: 1vw;
+}
+
+.contact-method a {
+  display: flex;
+  align-items: center;
+}
+
+.contact-icons {
+  display: flex;
+}
+
+.contact-map {
+  width: 40%;
+  display: flex;
+  justify-content: flex-start;
+  /* border: 1px solid red; */
+}
+
+.contact-map iframe {
+  border: 2px solid #048dfd;
+}
+
+/*==================
+footer
+===================*/
+footer {
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsla(207, 98%, 50%, 0.7);
+  color: #fff
 }

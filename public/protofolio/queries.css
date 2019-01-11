@@ -1,0 +1,98 @@
+@media only screen and (max-width: 1023px) {
+  .about__container {
+    flex-direction: column;
+  }
+
+  .about__skill {
+    width: 7vw;
+    height: 7vw;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid red; */
+  }
+
+  .contact-methods {
+    justify-content: center;
+    margin-bottom: 5vw;
+  }
+
+  .contact ion-icon {
+    font-size: 7vw;
+  }
+
+  .contact p {
+    font-size: 2vw;
+  }
+
+  .contact-map {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .modal-project__desc {
+    flex-direction: column;
+  }
+  .modal-project__picture img {
+    border-radius: 5px;
+    /* margin: auto; */
+  }
+  .modal-project__text {
+    margin-right: 0;
+  }
+
+  .card-project {
+    width: 90vw;
+    height: 45vw;
+  }
+
+  .card-project__title {
+    font-size: 4vw;
+  }
+  .card-project__skill {
+    font-size: 3vw;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .main-header {
+    height: 2rem;
+  }
+  .main-header__nav {
+    display: flex;
+    justify-content: center;
+    display: none;
+  }
+  .main-header__nav-list {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .main-header__nav-item {
+    margin: 0.5rem;
+  }
+
+  .main-header__mobile-nav {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .heading-primary-main {
+    font-size: 7vw;
+  }
+
+  .heading-primary-sub {
+    font-size: 5vw;
+    color: #fff;
+  }
+
+  footer {
+    height: 2rem;
+  }
+}

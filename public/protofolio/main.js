@@ -40,12 +40,12 @@ const navItems = $(".main-header__nav a");
 
 $(window).scroll(function() {
   const curPos = $(window).scrollTop();
-  const mainHeader = $(".main-header");
-  if (curPos >= $("#section-projects").position().top - mainHeader.height()) {
-    mainHeader.attr("style", "background-color: rgba(0, 0, 0, 0.6);");
-  } else {
-    mainHeader.attr("style", "background-color: rgba(0,0,0,0);");
-  }
+  // const mainHeader = $(".main-header");
+  // if (curPos >= $("#section-projects").position().top - mainHeader.height()) {
+  //   mainHeader.attr("style", "background-color: rgba(0, 0, 0, 0.6);");
+  // } else {
+  //   mainHeader.attr("style", "background-color: rgba(0,0,0,0);");
+  // }
   navItems.each(function() {
     const section = $($(this).attr("href"));
     const pos = section.position().top;

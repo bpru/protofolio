@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -36,16 +37,25 @@ section {
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .main-header__nav {
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 .main-header__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
   width: 100%;
 }
@@ -79,12 +89,20 @@ section {
 }
 
 .landing {
-  background-image: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)),
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.7)),
+      to(rgba(0, 0, 0, 0.7))
+    ),
+    url(img/coding.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(img/coding.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-color: #000;
+  /* background-color: #000; */
   height: 100vh;
 }
 
@@ -93,8 +111,14 @@ section {
   text-align: center;
   height: 100%;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -119,6 +143,14 @@ section {
   section-projects
 ***************************/
 .projects {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(255, 255, 255, 0.7)),
+      to(rgba(255, 255, 255, 0.7))
+    ),
+    url(img/bg-projects.jpg);
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.7),
       rgba(255, 255, 255, 0.7)
@@ -128,8 +160,13 @@ section {
   background-size: cover;
 }
 .container-projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -140,7 +177,8 @@ section {
   cursor: pointer;
   margin: 1rem;
   position: relative;
-  background-color: rgba(0, 0, 0);
+  background-color: rgb(0, 0, 0);
+  -webkit-box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.7);
   box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.7);
   overflow: hidden;
 }
@@ -150,8 +188,10 @@ section {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   color: #fff;
+  -webkit-transition: ease 0.6s;
   transition: ease 0.6s;
   opacity: 0;
 }
@@ -160,6 +200,7 @@ section {
   top: 20%;
   opacity: 1;
   border-bottom: 1px solid #fff;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   /* background-color: rgba(0, 0, 0, 0.5); */
   /* box-shadow: 0 0 1rem #000; */
@@ -172,6 +213,7 @@ section {
   margin: 0;
   padding: 0;
   display: block;
+  -webkit-transition: ease 1s;
   transition: ease 1s;
 }
 
@@ -184,12 +226,21 @@ section {
   position: absolute;
   top: 100%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-transition: ease 0.3s;
   transition: ease 0.3s;
 }
 
@@ -219,9 +270,16 @@ section {
   top: 0;
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   z-index: 101;
 }
@@ -232,7 +290,12 @@ section {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
   overflow: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   /* justify-content: space-between; */
 }
@@ -241,8 +304,14 @@ section {
   height: 4rem;
   background-color: rgba(4, 141, 253, 0.7);
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 0.5rem 1.5rem;
   /* border-radius: 10px; */
@@ -270,6 +339,8 @@ section {
 }
 
 .modal-project__desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 3vh 0;
   /* border: 1px solid blue; */
@@ -294,6 +365,8 @@ section {
 }
 .modal-project__picture {
   /* border: 1px red solid; */
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
   flex: 0 0 50%;
   /* margin-left: 2vw; */
   /* width: 60%; */
@@ -397,8 +470,14 @@ section {
 }
 
 .modal-project__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 1rem;
   height: 3rem;
@@ -423,6 +502,14 @@ section {
 section-about
 ======================*/
 .about {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(255, 255, 255)),
+      to(rgba(187, 233, 247, 0.5))
+    ),
+    url(img/bg-about.jpeg);
   background-image: linear-gradient(
       rgba(255, 255, 255),
       rgba(187, 233, 247, 0.5)
@@ -432,7 +519,11 @@ section-about
   background-size: cover;
 }
 .about__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -441,11 +532,41 @@ section-about
 }
 
 .about__photo img {
+  -o-object-fit: cover;
   object-fit: cover;
   width: 25vw;
   height: 25vw;
   border-radius: 50%;
   border: 2px solid #048dfd;
+}
+
+.about__more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.about__more .link-wrapper {
+  margin-left: 2vw;
+}
+
+.about__more ion-icon {
+  font-size: 3vw;
+  color: #048dfd;
+}
+.about__more span {
+  display: block;
+  visibility: hidden;
+  position: absolute;
+  font-size: 80%;
+  width: 8vw;
 }
 
 .about__desc {
@@ -484,6 +605,14 @@ section-about
 section-contact
 =======================*/
 .contact {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(255, 255, 255, 0.85)),
+      to(rgba(255, 255, 255, 0.85))
+    ),
+    url(img/bg-contact.jpg);
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.85),
       rgba(255, 255, 255, 0.85)
@@ -493,8 +622,13 @@ section-contact
   background-size: cover;
 }
 .contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   /* border: 1px solid red; */
   padding: 2vw;
@@ -502,7 +636,11 @@ section-contact
 
 .contact-methods {
   width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
   /* border: 1px solid red; */
 }
@@ -518,17 +656,27 @@ section-contact
 }
 
 .contact-method a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 .contact-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .contact-map {
   width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   /* border: 1px solid red; */
 }
@@ -542,9 +690,15 @@ footer
 ===================*/
 footer {
   height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: hsla(207, 98%, 50%, 0.7);
-  color: #fff
+  color: #fff;
 }

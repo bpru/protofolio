@@ -13,6 +13,10 @@ app.get("/omnifood", (req, res) => {
   res.redirect("/omnifood/index.html");
 });
 
+app.get('/download/:fileName', (req, res) => {
+  res.download(path.join(__dirname, `/downloads/${req.params.fileName}`))
+})
+
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT);

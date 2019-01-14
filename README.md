@@ -1,6 +1,6 @@
 ## My Protofolio
 
-This is the [protofolio site](http://www.protofolio-jcc.herokuapp.com) for Jen-Chieh Chiang. 
+This is the [protofolio site](http://protofolio-jcc.herokuapp.com) for Jen-Chieh Chiang. 
 
 Ther server is built with [Node.js](https://nodejs.org/) and [Express.js](https://expressjs.com/). 
 ### Installiation

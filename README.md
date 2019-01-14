@@ -15,7 +15,7 @@ npm run dev
 ```
 
 ### Deployment
-This site is deployed onto [Heroku](www.heroku.com).
+This site is deployed onto [Heroku](http://www.heroku.com).
 
 To deploy to heroku, an active heroku account is required and using heroku CLI is recommended. To install heroku CLI, please see details [here](https://devcenter.heroku.com/articles/heroku-cli).
 
